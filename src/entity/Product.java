@@ -107,7 +107,7 @@ public class Product implements IApp{
     public void inputData(Scanner scanner) {
         do {
             System.out.println("Nhập vào mã sản phẩm: ");
-            String productIdRegex = "(C | E | T)\\w{4}";
+            String productIdRegex = "(C | E | T)\\w{4}$";
             this.productId = scanner.nextLine();
 
             if (Pattern.matches(productIdRegex, this.productId)) {
